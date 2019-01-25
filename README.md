@@ -1,2 +1,2 @@
 # .conf
-My configurations of workspace
+Configurations of my workspace

@@ -12,7 +12,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
-(setq default-directory "D:/workspace/")
+(setq default-directory "~/workspace/") ; Change if you need
 
 
 ;; Package Management
@@ -21,7 +21,7 @@
 (require 'init-ui)		; UI management
 (require 'init-keybindings)	; Key bindings
 (require 'init-org)		; Org mode settings
-(require 'init-web)		; Web mode settings
+;(require 'init-web)		; Web mode settings
 
 
 ;;(require 'cmuscheme)

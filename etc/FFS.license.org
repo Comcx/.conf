@@ -140,39 +140,42 @@ Objects can be decomposed as subobjects.
 
 ** Flow
 
-*** Wake up            [Routine]             <06:20 - 06:30>
-*** Morning            [Routine/Wash]
-*** VOA normal x2      [English]
-*** TOEFL Listenning   [English]
-*** Vocabulary         [English]
-*** Rest               [Routine]
-*** CSAPP              [CS     ]
-*** School             [CS     ]
-
-*** Lunch              [Routine/Diet]        <12:00 - 12:20>
-*** Vocabulary         [English]             <12:20 - 12:30>
-*** Nap                [Routine/Sleeping]    <12:30 - 13:20>
-
-*** TOEFL Reading      [English]
-*** TOEFL Writing      [English]
-*** Rest               [Routine]
-*** School             [CS     ]
-*** ACM x1             [CS     ]
-*** OS programming     [CS/School]
-
-*** Running            [Exercise]            <18:00 - 18:30>
-*** Dinner             [Routine/Diet]        <18:40 - 19:00>
-
-*** Fiction            [English/Writing]
-*** TOEFL Speaking     [English]
-*** Speaking           [English]
-*** Pull-up            [Exercise]
-*** School             [CS     ]
-*** Evening            [Routine/Wash]
-*** Phone              [Routine]
-*** Diary              [English/Writing]
-*** Introspection      [Routine]
-*** Sleep              [Routine]             <23:00 - 06:20>
+| Item             | Category           | Time            |
+|------------------+--------------------+-----------------|
+| Wake up          | [Routine]          | <06:20 - 06:30> |
+| Morning          | [Routine/Wash]     |                 |
+| VOA normal x2    | [English]          |                 |
+| TOEFL Listenning | [English]          |                 |
+| Vocabulary       | [English]          |                 |
+| Rest             | [Routine]          |                 |
+| CSAPP            | [CS     ]          |                 |
+| School           | [CS     ]          |                 |
+|                  |                    |                 |
+| Lunch            | [Routine/Diet]     | <12:00 - 12:20> |
+| Vocabulary       | [English]          | <12:20 - 12:30> |
+| Nap              | [Routine/Sleeping] | <12:30 - 13:20> |
+|                  |                    |                 |
+| TOEFL Reading    | [English]          |                 |
+| TOEFL Writing    | [English]          |                 |
+| Rest             | [Routine]          |                 |
+| School           | [CS     ]          |                 |
+| ACM x1           | [CS     ]          |                 |
+| OS programming   | [CS/School]        |                 |
+|                  |                    |                 |
+| Running          | [Exercise]         | <18:00 - 18:30> |
+| Dinner           | [Routine/Diet]     | <18:40 - 19:00> |
+|                  |                    |                 |
+| Fiction          | [English/Writing]  |                 |
+| TOEFL Speaking   | [English]          |                 |
+| Speaking         | [English]          |                 |
+| Pull-up          | [Exercise]         |                 |
+| School           | [CS     ]          |                 |
+| Evening          | [Routine/Wash]     |                 |
+| Phone            | [Routine]          |                 |
+| Diary            | [English/Writing]  |                 |
+| Introspection    | [Routine]          |                 |
+| Sleep            | [Routine]          | <23:00 - 06:20> |
+|                  |                    |                 |
 
 
 

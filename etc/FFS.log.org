@@ -2,18 +2,18 @@
 #+AUTHOR: Comcx
 
 
-* [5/29] The Table
+* [0/29] The Table
 
 ** TODO Wake up            [Routine]             <06:20 - 06:30>
-** DONE Morning            [Routine/Wash]
+** TODO Morning            [Routine/Wash]
 ** TODO VOA normal x2      [English]
 ** TODO TOEFL Listenning   [English]
-** DONE Vocabulary         [English]
-** DONE Rest               [Routine]
-** DONE CSAPP              [CS     ]
+** TODO Vocabulary         [English]
+** TODO Rest               [Routine]
+** TODO CSAPP              [CS     ]
 ** TODO School             [CS     ]
 
-** DONE Lunch              [Routine/Diet]        <12:00 - 12:20>
+** TODO Lunch              [Routine/Diet]        <12:00 - 12:20>
 ** TODO Vocabulary         [English]             <12:20 - 12:30>
 ** TODO Nap                [Routine/Sleeping]    <12:30 - 13:20>
 
@@ -40,11 +40,13 @@
 
 
 
+
 * Records
 
 1) <2019-04-08 一>  [18/29]  62.07%
 2) <2019-04-09 二>  [19/29]  65.52%
-3) <2019-04-10 三>  [/29]
+3) <2019-04-10 三>  [20/29]  69.00%
+4) <2019-04-10 三>
 
 
 

@@ -2,49 +2,49 @@
 #+AUTHOR: Comcx
 
 
-* [19/29] The Table
+* [5/29] The Table
 
 ** TODO Wake up            [Routine]             <06:20 - 06:30>
 ** DONE Morning            [Routine/Wash]
 ** TODO VOA normal x2      [English]
-** DONE TOEFL Listenning   [English]
+** TODO TOEFL Listenning   [English]
 ** DONE Vocabulary         [English]
 ** DONE Rest               [Routine]
 ** DONE CSAPP              [CS     ]
-** DONE School             [CS     ]
+** TODO School             [CS     ]
 
 ** DONE Lunch              [Routine/Diet]        <12:00 - 12:20>
-** DONE Vocabulary         [English]             <12:20 - 12:30>
-** DONE Nap                [Routine/Sleeping]    <12:30 - 13:20>
+** TODO Vocabulary         [English]             <12:20 - 12:30>
+** TODO Nap                [Routine/Sleeping]    <12:30 - 13:20>
 
-** DONE TOEFL Reading      [English]
+** TODO TOEFL Reading      [English]
 ** TODO TOEFL Writing      [English]
-** DONE Rest               [Routine]
-** DONE School             [CS     ]
-** DONE ACM x1             [CS     ]
+** TODO Rest               [Routine]
+** TODO School             [CS     ]
+** TODO ACM x1             [CS     ]
 ** TODO OS programming     [CS/School]
 
 ** TODO Running            [Exercise]            <18:00 - 18:30>
-** DONE Dinner             [Routine/Diet]        <18:40 - 19:00>
+** TODO Dinner             [Routine/Diet]        <18:40 - 19:00>
 
-** DONE Fiction            [English/Writing]
+** TODO Fiction            [English/Writing]
 ** TODO TOEFL Speaking     [English]
 ** TODO Speaking           [English]
-** DONE Pull-up            [Exercise]
+** TODO Pull-up            [Exercise]
 ** TODO School             [CS     ]
-** DONE Evening            [Routine/Wash]
-** DONE Phone              [Routine]
+** TODO Evening            [Routine/Wash]
+** TODO Phone              [Routine]
 ** TODO Diary              [English/Writing]
 ** TODO Introspection      [Routine]
-** DONE Sleep              [Routine]             <23:00 - 06:20>
+** TODO Sleep              [Routine]             <23:00 - 06:20>
 
 
 
 * Records
 
-- <2019-04-08>  [18/29]  62.07%
-- <2019-04-09>  [19/29]  65.52%
-
+1) <2019-04-08 一>  [18/29]  62.07%
+2) <2019-04-09 二>  [19/29]  65.52%
+3) <2019-04-10 三>  [/29]
 
 
 

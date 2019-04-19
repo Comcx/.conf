@@ -101,14 +101,14 @@ Objects can be decomposed as subobjects.
 ***** Recite templets
 
 
-*** CS
-**** CSAPP
-**** School
-***** CLRS
-***** OS(Linux)
+*** TODO CS
+**** DONE CSAPP
+**** NEXT School
+***** NEXT CLRS
+***** NEXT OS(Linux)
 ***** General OS structure
-***** Linux system programming
-***** Compiler
+***** NEXT Linux system programming
+***** NEXT Compiler
 ***** General Compiler tech
 ***** Tool chain
 ****** Flex
@@ -116,7 +116,7 @@ Objects can be decomposed as subobjects.
 ****** LLVM
 ***** Graph Theory
 ***** Network Security
-**** ACM 
+**** NEXT ACM 
 ***** x1 per day
 
 *** Exercise
@@ -148,12 +148,12 @@ Objects can be decomposed as subobjects.
 | TOEFL Listenning | [English]          |                 |
 | Vocabulary       | [English]          |                 |
 | Rest             | [Routine]          |                 |
-| CSAPP            | [CS     ]          |                 |
+| Linux kernel     | [CS     ]          |                 |
 | School           | [CS     ]          |                 |
 |                  |                    |                 |
 | Lunch            | [Routine/Diet]     | <12:00 - 12:20> |
 | Vocabulary       | [English]          | <12:20 - 12:30> |
-| Nap              | [Routine/Sleeping] | <12:30 - 13:20> |
+| Nap & Tulpa      | [Routine/Sleeping] | <12:30 - 13:20> |
 |                  |                    |                 |
 | TOEFL Reading    | [English]          |                 |
 | TOEFL Writing    | [English]          |                 |

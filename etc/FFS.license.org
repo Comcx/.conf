@@ -149,7 +149,7 @@ Objects can be decomposed as subobjects.
 | Vocabulary       | [English]          |                 |
 | Rest             | [Routine]          |                 |
 | Linux kernel     | [CS     ]          |                 |
-| School           | [CS     ]          |                 |
+| OS               | [CS/School]        |                 |
 |                  |                    |                 |
 | Lunch            | [Routine/Diet]     | <12:00 - 12:20> |
 | Vocabulary       | [English]          | <12:20 - 12:30> |
@@ -160,7 +160,8 @@ Objects can be decomposed as subobjects.
 | Rest             | [Routine]          |                 |
 | School           | [CS     ]          |                 |
 | ACM x1           | [CS     ]          |                 |
-| OS programming   | [CS/School]        |                 |
+| OS programming   | [CS     ]          |                 |
+| Net Security     | [CS/School]        |                 |
 |                  |                    |                 |
 | Running          | [Exercise]         | <18:00 - 18:30> |
 | Dinner           | [Routine/Diet]     | <18:40 - 19:00> |
@@ -169,7 +170,7 @@ Objects can be decomposed as subobjects.
 | TOEFL Speaking   | [English]          |                 |
 | Speaking         | [English]          |                 |
 | Pull-up          | [Exercise]         |                 |
-| School           | [CS     ]          |                 |
+| Algo or Graph    | [CS/School]        |                 |
 | Evening          | [Routine/Wash]     |                 |
 | Phone            | [Routine]          |                 |
 | Diary            | [English/Writing]  |                 |

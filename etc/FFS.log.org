@@ -2,7 +2,7 @@
 #+AUTHOR: Comcx
 
 
-* [0/29] The Table
+* [0/30] The Table
 
 ** TODO Wake up            [Routine]             <06:20 - 06:30>
 ** TODO Morning            [Routine/Wash]
@@ -11,7 +11,7 @@
 ** TODO Vocabulary         [English]
 ** TODO Rest               [Routine]
 ** TODO Linux kernel       [CS     ]
-** TODO School             [CS     ]
+** TODO OS                 [CS/School]
 
 ** TODO Lunch              [Routine/Diet]        <12:00 - 12:20>
 ** TODO Vocabulary         [English]             <12:20 - 12:30>
@@ -20,9 +20,10 @@
 ** TODO TOEFL Reading      [English]
 ** TODO TOEFL Writing      [English]
 ** TODO Rest               [Routine]
-** TODO School             [CS     ]
+** TODO Compiler           [CS/School]
 ** TODO ACM x1             [CS     ]
-** TODO OS programming     [CS/School]
+** TODO OS programming     [CS     ]
+** TODO Net Security       [CS/School]
 
 ** TODO Running            [Exercise]            <18:00 - 18:30>
 ** TODO Dinner             [Routine/Diet]        <18:40 - 19:00>
@@ -31,7 +32,7 @@
 ** TODO TOEFL Speaking     [English]
 ** TODO Speaking           [English]
 ** TODO Pull-up            [Exercise]
-** TODO School             [CS     ]
+** TODO Algo | Graph       [CS/School]
 ** TODO Evening            [Routine/Wash]
 ** TODO Phone              [Routine]
 ** TODO Diary              [English/Writing]

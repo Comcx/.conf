@@ -1,0 +1,39 @@
+#+TITLE:  Windows Management interface
+#+AUTHOR: Comcx
+#+DATE:   <2019-04-20 六>
+
+* Description
+underwork...
+
+* Key bindings
+
+| Function     | Key            | Note |
+|--------------+----------------+------|
+| Top-half     | Win-Up         |      |
+| Bottom-half  | Win-Down       |      |
+| Left-half    | Win-Left       |      |
+| Right-half   | Win-Right      |      |
+| Left-top     | Win-Shift-Up   |      |
+| Left-bottom  | Win-Shift-Down |      |
+| Right-top    | Win-Shift-Up   |      |
+| Right-bottom | Win-Shift-Down |      |
+|              |                |      |
+| Maximize     | Win-M          |      |
+| Hide         | Win-D          |      |
+| Switch       | Alt-Tab        |      |
+| Close        | Win-C          |      |
+|              |                |      |
+
+
+
+
+
+
+
+
+
+
+
+
+
+

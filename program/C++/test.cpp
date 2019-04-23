@@ -2,6 +2,7 @@
 #include <iostream>
 
 use module Mix;
+use module Mix::Alias;
 use module std;
 
 module Test {
@@ -14,24 +15,29 @@ Int add(Int a, Int b) {return a + b;}
 
 
 
-mix<Int n> struct
+lambda<Int n> struct
 fact {
-  enum {ans = n * fact<n - 1>::ans};
+  static val ans = n * fact<n - 1>::ans;
 };
 
-mix<> struct
+lambda<> struct
 fact<0> {
-  enum {ans = 1};
+  static val ans = 1;
 };
 
-mix<Type s> s
-re() {return "";}
+
+
+
 
 Int main() {
 
   val i {5 + 6};
+  val d = Int(3.14);
   typeOf(i) a(3);
-  fact<5> ans;
+  int xx = 3;
+  fact<xx> ans;
+  TLP::Int<5> x;
+  //mix_print(TLP::True);
   String s("Hello!");
   cout << Test::add(*Test::id, i)
        << s << endl

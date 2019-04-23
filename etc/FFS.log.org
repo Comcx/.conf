@@ -2,18 +2,18 @@
 #+AUTHOR: Comcx
 
 
-* [0/30] The Table
+* [3/30] The Table
 
 ** TODO Wake up            [Routine]             <06:20 - 06:30>
-** TODO Morning            [Routine/Wash]
+** DONE Morning            [Routine/Wash]
 ** TODO VOA normal x2      [English]
 ** TODO TOEFL Listenning   [English]
 ** TODO Vocabulary         [English]
-** TODO Rest               [Routine]
+** DONE Rest               [Routine]
 ** TODO Linux kernel       [CS     ]
 ** TODO OS                 [CS/School]
 
-** TODO Lunch              [Routine/Diet]        <12:00 - 12:20>
+** DONE Lunch              [Routine/Diet]        <12:00 - 12:20>
 ** TODO Vocabulary         [English]             <12:20 - 12:30>
 ** TODO Nap & Tulpa        [Routine/Sleeping]    <12:30 - 13:20>
 

@@ -10,17 +10,20 @@
 
 #include <string>
 
-#define var    auto
-#define val    const auto
-#define mix    template
-#define Set    class
-#define use    using
-#define def    using
-#define Type   typename
-#define module namespace
-#define typeOf decltype
-#define lambda(...)   mix<__VA_ARGS__> Set
-#define function(...) mix<__VA_ARGS__> struct
+
+
+#define var     auto
+#define val     const auto
+#define mix     template
+#define Set     class
+#define use     using
+#define def     using
+#define Type    typename
+#define module  namespace
+#define typeOf  decltype
+#define literal constexpr
+#define lambda(...)     mix<__VA_ARGS__> Set
+#define function(...)   mix<__VA_ARGS__> struct
 #define mix_return(...) def ans = __VA_ARGS__
 #define mix_apply(f, ...) f<__VA_ARGS__>::ans
 #define mix_print(...) Mix::Print<__VA_ARGS__> token##__LINE__
@@ -79,10 +82,10 @@ module TLP {
 
   struct Nil;
   function(Set a, Set b)
-  Cons {
+  cons {
     def fst = a;
     def snd = b;
-    mix_return(Cons<a, b>);
+    mix_return(cons<a, b>);
   };
 
   /*Lists*/
@@ -93,13 +96,13 @@ module TLP {
 
   function(Set x, Set... xs)
   List<x, xs...> {
-    mix_return(Cons<x, mix_apply(Set List, xs...)>);
+    mix_return(cons<x, mix_apply(Set List, xs...)>);
   };
 
   function(lambda(Set x) f, Set xs)
   map {
     mix_return
-      (Cons<mix_apply(Set f, Set xs::fst),
+      (cons<mix_apply(Set f, Set xs::fst),
 	    mix_apply(Set map, f, Set xs::snd)>);
   };
   
@@ -123,6 +126,33 @@ module TLP {
 }//end module TLP
 }//end module Mix
 
+
+
+
+
+
+
+//If u don't want these
+#ifndef MIX_MACRO
+
+#undef var
+#undef val
+#undef mix
+#undef Set 
+#undef use 
+#undef def  
+#undef Type   
+#undef module 
+#undef typeOf 
+#undef literal
+#undef lambda
+#undef function
+#undef mix_return
+#undef mix_apply
+#undef mix_print
+
+
+#endif
 
 
 #endif

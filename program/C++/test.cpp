@@ -1,9 +1,12 @@
+#define MIX_MACRO
 #include "Mix.h"
 #include <iostream>
 
 use module Mix;
 use module Mix::Alias;
 use module std;
+
+
 
 module Test {
 
@@ -19,7 +22,8 @@ sum {
   mix_return
     (mix_apply(Set TLP::add, n,
 	       mix_apply(Set sum,
-			 mix_apply(Set TLP::add, n, mix_Int(-1)))));
+			 mix_apply(Set TLP::add, n,
+				   mix_Int(-1)))));
 };
 
 function()
@@ -38,11 +42,13 @@ add1 {
 
 Int main() {
 
-  def xs = mix_apply(TLP::List,
-		     mix_Int(5),
-		     mix_Int(6));
+  def xs = mix_apply
+    (TLP::List, mix_Int(5),
+                mix_Int(6));
   def res = mix_apply(sum, mix_Int(5));
-  cout << res::value << endl;
+  literal Int x = res::value;
+  cout << res::value << endl
+       << x << endl;
   
   return 0;
 }

@@ -22,6 +22,7 @@
 #define lambda(...)   mix<__VA_ARGS__> Set
 #define function(...) mix<__VA_ARGS__> struct
 #define mix_return(...) def ans = __VA_ARGS__
+#define mix_apply(f, ...) f<__VA_ARGS__>::ans
 #define mix_print(...) Mix::Print<__VA_ARGS__> token##__LINE__
 
 
@@ -36,13 +37,13 @@ Print {
 
 module Alias {
   
-  use Int    = int;          //unsigned Int is not allowed
-  use Unit   = void;
-  use Bool   = bool;
-  use Char   = char;
-  use Float  = float;
-  use Double = double;
-  use String = std::string;  //can be changed later
+  def Int    = int;          //unsigned Int is not allowed
+  def Unit   = void;
+  def Bool   = bool;
+  def Char   = char;
+  def Float  = float;
+  def Double = double;
+  def String = std::string;  //can be changed later
 }
 
 module TLP {
@@ -92,18 +93,30 @@ module TLP {
 
   function(Set x, Set... xs)
   List<x, xs...> {
-    mix_return(Cons<x, Set List<xs...>::ans>);
+    mix_return(Cons<x, mix_apply(Set List, xs...)>);
   };
 
   function(lambda(Set x) f, Set xs)
   map {
-    mix_return(Cons<Set f<Set xs::fst>::ans,
-	            Set map<f, Set xs::snd>>);
+    mix_return
+      (Cons<mix_apply(Set f, Set xs::fst),
+	    mix_apply(Set map, f, Set xs::snd)>);
   };
   
   function(lambda(Set x) f)
   map<f, Nil> {
     mix_return(Nil);
+  };
+
+  function(lambda(Set a, Set e) f, Set a, Set xs)
+  foldl {
+    mix_return
+      (mix_apply(Set foldl, f,
+		 mix_apply(Set f, a, Set xs::fst), Set xs::snd));
+  };
+  function(lambda(Set a, Set e) f, Set a)
+  foldl<f, a, Nil> {
+    mix_return(a);
   };
 
 

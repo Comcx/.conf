@@ -14,16 +14,19 @@ Int add(Int a, Int b) {return a + b;}
 }
 
 
-
-function(Int n)
-fact {
-  static val ans = n * fact<n - 1>::ans;
+function(Set n)
+sum {
+  mix_return
+    (mix_apply(Set TLP::add, n,
+	       mix_apply(Set sum,
+			 mix_apply(Set TLP::add, n, mix_Int(-1)))));
 };
 
 function()
-fact<0> {
-  static val ans = 1;
+sum<mix_Int(0)> {
+  mix_return(mix_Int(0));
 };
+
 
 function(Set x)
 add1 {
@@ -35,20 +38,11 @@ add1 {
 
 Int main() {
 
-  val i {5 + 6};
-  val d = Int(3.14);
-  typeOf(i) a(3);
-
-  fact<5> ans;
-  def ls = TLP::List<TLP::Int<2>,
-		     TLP::Int<5>>::ans;
-  def xs = TLP::map<add1, ls>::ans;
-  cout << xs::fst::value << endl;
-  String s("Hello!");
-  cout << Test::add(*Test::id, i)
-       << s << endl
-       << mix_add(mix_Int(3), mix_Int(4))::value << endl
-       << ans.ans << endl;
+  def xs = mix_apply(TLP::List,
+		     mix_Int(5),
+		     mix_Int(6));
+  def res = mix_apply(sum, mix_Int(5));
+  cout << res::value << endl;
   
   return 0;
 }

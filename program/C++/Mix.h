@@ -27,9 +27,9 @@
 
 module Mix {
 
-mix<Set T> struct
+mix<Type T> struct
 Print {
-  const int value = 1 / (sizeof(T) - sizeof(T));
+  const int value = sizeof(T) / 2;
 };
 
 
@@ -46,12 +46,23 @@ module Alias {
 
 module TLP {
 
+  //#define value(x) x::value
+  //#define ans(x) x::ans
+  #define mix_Int(i) TLP::Int<i>
   lambda<Alias::Int i> struct
   Int {
     static val value = i;
     def ans = Int<i>;
   };
+  
+  #define mix_add(a, b) TLP::add<a, b>
+  lambda<Set a, Set b> struct
+  add {
+    static val value = a::value + b::value;
+    def ans = Int<value>;
+  };
 
+  #define mix_Bool(b) TLP::Bool<b>
   lambda<Alias::Bool b> struct
   Bool {
     static val value = b;
@@ -61,11 +72,28 @@ module TLP {
   def True  = Bool<true>;
   def False = Bool<false>;
 
+  struct Nil;
+  lambda<Set a, Set b> struct
+  Cons {
+    def fst = a;
+    def snd = b;
+    def ans = Cons<a, b>;
+  };
+
+  lambda<Set... xs> struct
+  List {
+    def ans = Nil;
+  };
+
+  lambda<Set x, Set... xs> struct
+  List<x, xs...> {
+    def ans = Cons<x, Set List<xs...>::ans>;
+  };
   
 
 
-}
-}
+}//end module TLP
+}//end module Mix
 
 
 

@@ -34,13 +34,16 @@ Int main() {
   val i {5 + 6};
   val d = Int(3.14);
   typeOf(i) a(3);
-  int xx = 3;
-  fact<xx> ans;
+
+  fact<5> ans;
   TLP::Int<5> x;
-  //mix_print(TLP::True);
+  def ls = TLP::List<TLP::Int<2>,
+		     TLP::Int<5>>::ans;
+  cout << ls::snd::fst::value << endl;
   String s("Hello!");
   cout << Test::add(*Test::id, i)
        << s << endl
+       << mix_add(mix_Int(3), mix_Int(4))::value << endl
        << ans.ans << endl;
   
   return 0;

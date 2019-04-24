@@ -15,16 +15,20 @@ Int add(Int a, Int b) {return a + b;}
 
 
 
-lambda<Int n> struct
+function(Int n)
 fact {
   static val ans = n * fact<n - 1>::ans;
 };
 
-lambda<> struct
+function()
 fact<0> {
   static val ans = 1;
 };
 
+function(Set x)
+add1 {
+  mix_return(TLP::add<x, TLP::Int<7>>);
+};
 
 
 
@@ -36,10 +40,10 @@ Int main() {
   typeOf(i) a(3);
 
   fact<5> ans;
-  TLP::Int<5> x;
   def ls = TLP::List<TLP::Int<2>,
 		     TLP::Int<5>>::ans;
-  cout << ls::snd::fst::value << endl;
+  def xs = TLP::map<add1, ls>::ans;
+  cout << xs::fst::value << endl;
   String s("Hello!");
   cout << Test::add(*Test::id, i)
        << s << endl

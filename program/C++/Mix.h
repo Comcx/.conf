@@ -19,15 +19,16 @@
 #define Type   typename
 #define module namespace
 #define typeOf decltype
-#define lambda template
-
+#define lambda(...)   mix<__VA_ARGS__> Set
+#define function(...) mix<__VA_ARGS__> struct
+#define mix_return(...) def ans = __VA_ARGS__
 #define mix_print(...) Mix::Print<__VA_ARGS__> token##__LINE__
 
 
 
 module Mix {
 
-mix<Type T> struct
+function(Set T)
 Print {
   const int value = sizeof(T) / 2;
 };
@@ -48,48 +49,62 @@ module TLP {
 
   //#define value(x) x::value
   //#define ans(x) x::ans
+  
+  /*Integers*/
   #define mix_Int(i) TLP::Int<i>
-  lambda<Alias::Int i> struct
+  function(Alias::Int i)
   Int {
     static val value = i;
-    def ans = Int<i>;
+    mix_return(Int<i>);
   };
   
   #define mix_add(a, b) TLP::add<a, b>
-  lambda<Set a, Set b> struct
+  function(Set a, Set b)
   add {
     static val value = a::value + b::value;
-    def ans = Int<value>;
+    mix_return(Int<value>);
   };
 
+  /*Booleans*/
   #define mix_Bool(b) TLP::Bool<b>
-  lambda<Alias::Bool b> struct
+  function(Alias::Bool b)
   Bool {
     static val value = b;
-    def ans = Bool<b>;
+    mix_return(Bool<b>);
   };
 
   def True  = Bool<true>;
   def False = Bool<false>;
 
   struct Nil;
-  lambda<Set a, Set b> struct
+  function(Set a, Set b)
   Cons {
     def fst = a;
     def snd = b;
-    def ans = Cons<a, b>;
+    mix_return(Cons<a, b>);
   };
 
-  lambda<Set... xs> struct
+  /*Lists*/
+  function(Set... xs)
   List {
-    def ans = Nil;
+    mix_return(Nil);
   };
 
-  lambda<Set x, Set... xs> struct
+  function(Set x, Set... xs)
   List<x, xs...> {
-    def ans = Cons<x, Set List<xs...>::ans>;
+    mix_return(Cons<x, Set List<xs...>::ans>);
+  };
+
+  function(lambda(Set x) f, Set xs)
+  map {
+    mix_return(Cons<Set f<Set xs::fst>::ans,
+	            Set map<f, Set xs::snd>>);
   };
   
+  function(lambda(Set x) f)
+  map<f, Nil> {
+    mix_return(Nil);
+  };
 
 
 }//end module TLP

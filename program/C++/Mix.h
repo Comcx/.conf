@@ -147,9 +147,6 @@ module TLP {
 #undef literal
 #undef lambda
 #undef function
-#undef mix_return
-#undef mix_apply
-#undef mix_print
 
 
 #endif

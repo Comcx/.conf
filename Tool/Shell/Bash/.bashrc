@@ -21,6 +21,7 @@ alias ..='cd ..'
 
 #--------------Applications--------------#
 alias vi='vim'
-
+alias execUrxvt='xrdb ~/.Xresources'
+alias setImage='feh --bg-scale'
 
 PS1='\n\[\e[1;36m\]\u\[\e[m\] \w\n\[\e[1;35m\]>\[\e[m\] '

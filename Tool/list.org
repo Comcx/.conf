@@ -1,0 +1,18 @@
+
+
+* Bash
+
+* Emacs
+
+* Vim
+
+* I3wm
+
+* Feh
+
+* Urxvt
+
+
+
+
+

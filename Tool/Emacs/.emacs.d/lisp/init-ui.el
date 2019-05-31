@@ -59,7 +59,7 @@
 ;; Emacsを半透明・透明にする
 (global-set-key "\C-xa" 
   (lambda () (interactive) 
-    (set-frame-parameter nil 'alpha 64)))
+    (set-frame-parameter nil 'alpha 81)))
 (global-set-key "\C-xg"
   (lambda () (interactive)
      (set-frame-parameter nil 'alpha 100)))

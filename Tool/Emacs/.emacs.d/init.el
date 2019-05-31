@@ -63,17 +63,17 @@
 (global-company-mode 1)
 
 
-;; Neotree added
-(add-to-list 'load-path "~/.emacs.d/elpa/neotree")
+;; Neotree added;
+(add-to-list 'load-path "elpa/neotree")
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-theme 'ascii)
 
 
 
-(use-package ensime
-  :ensure t
-  :pin melpa)
+;(use-pac
+;  :ensure t
+;  :pin melpa)
 
 
 

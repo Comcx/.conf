@@ -46,8 +46,8 @@
 ;; Set default window config
 (set-frame-position (selected-frame) 0 0)
 
-(set-frame-width  (selected-frame) 110)
-(set-frame-height (selected-frame) 30)
+;(set-frame-width  (selected-frame) 110)
+;(set-frame-height (selected-frame) 30)
 
 ;; Set cursor type
 (setq-default cursor-type 'box)

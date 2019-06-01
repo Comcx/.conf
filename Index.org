@@ -13,6 +13,10 @@
 
 ** Text
 *** Font
+**** Source Code Pro
+**** Sarasa
+**** Consolas
+
 *** Shell
 **** Bash
 **** Urxvt
@@ -34,6 +38,7 @@
 * Lang
 ** C
 ** C++
+*** Mix.lib
 ** Haskell
 ** Julia
 ** Lua

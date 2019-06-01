@@ -1,0 +1,52 @@
+#+TITLE: Index of Configurations
+#+AUTHOR: Comcx
+
+
+* OS
+** Hierarchy
+*** Workspace
+**** Repo
+**** Lang
+**** Game
+
+* UI
+
+** Text
+*** Font
+*** Shell
+**** Bash
+**** Urxvt
+*** Emacs
+
+** Window
+*** WM
+**** I3wm
+
+** Graphic
+*** Icon
+*** Wallpaper
+*** Xfce4
+
+* Net
+** Web
+** Git
+
+* Lang
+** C
+** C++
+** Haskell
+** Julia
+** Lua
+** Python
+** Racket
+** Scala
+** Scheme
+** JavaScript
+
+* Etc
+** FFS
+
+
+
+
+

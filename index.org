@@ -1,4 +1,0 @@
-#+TITLE: Index of Configurations
-#+AUTHOR: Comcx
-
-

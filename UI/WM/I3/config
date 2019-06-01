@@ -309,8 +309,15 @@ set_from_resource $term_color5     color5
 set_from_resource $term_color6     color6
 set_from_resource $term_color7     color7
 set_from_resource $term_color8     color8
-set_from_resource $term_color9    man aurman## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
+set_from_resource $term_color9     color9
+
+bar {
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+        position top
+	status_command i3status
+#	mode hide
+	workspace_buttons yes
+	tray_output primary
 #	tray_output eDP1
 
 	bindsym button4 nop
@@ -323,7 +330,7 @@ set_from_resource $term_color9    man aurman## please set your primary output fi
         statusline #F9FAF9
         separator  #454947
 
-#                      border  backgr. text
+    #                      border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34
         active_workspace   #595B5B #353836 #FDF6E3
         inactive_workspace #595B5B #222D31 #EEE8D5

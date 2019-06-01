@@ -12,7 +12,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
-(setq default-directory "~/workspace/") ; Change if you need
+(setq default-directory "~/Workspace/") ; Change if you need
 
 
 ;; Package Management

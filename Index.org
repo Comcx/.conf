@@ -4,11 +4,17 @@
 
 * OS
 ** Hierarchy
-*** Workspace
-**** Repo
-**** Lang
-**** Game
-**** Note
+*** /home/comcx
+**** .bashrc
+**** .emacs.d
+**** .Xresources
+**** /.i3/config
+**** Workspace
+***** Repo
+***** Lang
+***** Game
+***** Note
+***** .conf
 
 * UI
 

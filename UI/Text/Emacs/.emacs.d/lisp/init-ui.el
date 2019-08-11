@@ -10,7 +10,7 @@
 
 
 (setq day-theme 'dichromacy)
-(setq dark-theme 'tangotango)
+(setq nox-theme 'tangotango)
 
 (defun synchronize-theme ()
     (setq hour
@@ -18,7 +18,7 @@
             (substring (current-time-string) 11 13)))
     (if (member hour (number-sequence 6 18))
         (setq now day-theme)
-      (setq now dark-theme))
+        (setq now nox-theme))
 
     (load-theme now))
 
@@ -31,12 +31,12 @@
  (kbd "C-c d a y")
  (lambda () (interactive)
   ;(load-theme 'infodoc)
-   (load-theme 'dichromacy)))
+   (load-theme day-theme)))
 
 (global-set-key
  (kbd "C-c n o x")
  (lambda () (interactive)
-   (load-theme 'tangotango)))
+   (load-theme nox-theme)))
 
 
 

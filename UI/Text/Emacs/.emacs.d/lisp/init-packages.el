@@ -41,6 +41,11 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
+;; Neotree added;
+(add-to-list 'load-path "~/.emacs.d/elpa/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq neo-theme 'ascii)
 
 
 

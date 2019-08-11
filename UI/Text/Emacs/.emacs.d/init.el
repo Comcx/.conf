@@ -23,7 +23,6 @@
 (require 'init-org)		; Org mode settings
 ;(require 'init-web)		; Web mode settings
 
-
 ;;(require 'cmuscheme)
 
 
@@ -42,8 +41,7 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
-;; '(custom-enabled-themes (quote (wombat)))
- '(package-selected-packages (quote (company)))
+ '(package-selected-packages (quote (haskell-mode company)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(tool-bar-mode nil)
@@ -60,15 +58,7 @@
 
 
 ;; Complete Any mode
-(global-company-mode 1)
-
-
-;; Neotree added;
-(add-to-list 'load-path "elpa/neotree")
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
-(setq neo-theme 'ascii)
-
+;(global-company-mode 1)
 
 
 ;(use-pac

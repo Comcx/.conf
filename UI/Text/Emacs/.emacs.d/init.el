@@ -15,6 +15,7 @@
 (setq default-directory "~/Workspace/") ; Change if you need
 
 
+
 ;; Package Management
 ;; -----------------------------------------------------------------
 (require 'init-packages)	; Package management
@@ -41,6 +42,9 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(custom-safe-themes
+   (quote
+    ("b9a9204174c09936593d7c6e69ba300486b58999cae067d4af5d5cb180784b42" default)))
  '(package-selected-packages (quote (haskell-mode company)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
@@ -123,7 +127,6 @@
     (paredit-mode 1)
     (define-key scheme-mode-map (kbd "<f5>") 'scheme-send-last-sexp-split-window)
     (define-key scheme-mode-map (kbd "<f6>") 'scheme-send-definition-split-window)))
-
 
 
 

@@ -89,16 +89,16 @@
 	 :height 120
 	 :width normal))))
 
- '(rainbow-delimiters-depth-1-face ((t (:foreground "cyan"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "gold"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "deep sky blue"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "orange"))))
  '(rainbow-delimiters-depth-4-face ((t (:foreground "coral"))))
  '(rainbow-delimiters-depth-5-face ((t (:foreground "green"))))
  '(rainbow-delimiters-depth-6-face ((t (:foreground "purple"))))
  '(rainbow-delimiters-depth-7-face ((t (:foreground "yellow"))))
- '(rainbow-delimiters-depth-8-face ((t (:foreground "black"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "cyan"))))
  '(rainbow-delimiters-depth-9-face ((t (:foreground "violet"))))
- '(rainbow-delimiters-unmatched-face ((t (:background "cyan"))))
+ '(rainbow-delimiters-unmatched-face ((t (:background "red"))))
  
 )
 

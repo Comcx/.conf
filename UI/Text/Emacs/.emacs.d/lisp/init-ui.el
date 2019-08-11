@@ -29,7 +29,8 @@
 (global-set-key
  (kbd "C-c d a y")
  (lambda () (interactive)
-   (load-theme 'infodoc)))
+  ;(load-theme 'infodoc)
+   (load-theme 'dichromacy)))
 
 (global-set-key
  (kbd "C-c n o x")
@@ -59,7 +60,7 @@
 ;; Emacsを半透明・透明にする
 (global-set-key "\C-xa" 
   (lambda () (interactive) 
-    (set-frame-parameter nil 'alpha 81)))
+    (set-frame-parameter nil 'alpha 86)))
 (global-set-key "\C-xg"
   (lambda () (interactive)
      (set-frame-parameter nil 'alpha 100)))
@@ -79,7 +80,26 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+ '(default
+    ((t (:family "Source Code Pro"
+	 :foundry "outline"
+	 :slant normal
+	 :weight normal
+	 :height 120
+	 :width normal))))
+
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "black"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "blue"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "orange"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "red"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "green"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "purple"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "yellow"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "black"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "violet"))))
+ '(rainbow-delimiters-unmatched-face ((t (:background "cyan"))))
+ 
+)
 
 
 ;; Set line number display
@@ -90,7 +110,7 @@
 (global-hl-line-mode 1)
 
 ;; Hide tool bar
-(tool-bar-mode -1)
+(tool-bar-mode nil)
 
 
 

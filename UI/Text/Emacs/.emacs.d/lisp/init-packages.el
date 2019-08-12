@@ -28,6 +28,8 @@
      ;smartparens
      ;popwin
      ;; --- Major Mode ---
+     scala-mode
+     haskell-mode
      web-mode
      js2-mode
      ;org-mode

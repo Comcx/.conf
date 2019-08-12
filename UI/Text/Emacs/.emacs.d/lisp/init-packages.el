@@ -22,22 +22,23 @@
      company
      ;; --- Better Editor ---
      smooth-scrolling
-     hungry-delete
-     swiper
-     counsel
-     smartparens
-     popwin
+     ;hungry-delete
+     ;swiper
+     ;counsel
+     ;smartparens
+     ;popwin
      ;; --- Major Mode ---
      web-mode
      js2-mode
-     org-mode
+     ;org-mode
      markdown-mode
      ;; --- Themes ---
-     monokai-theme
+     ;monokai-theme
 
      ;; ...
     ) "Default packages")
 
+;; Rainbow brackets
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
@@ -46,6 +47,31 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-theme 'ascii)
+
+
+
+(setq package-selected-packages my/packages)
+
+(defun my/packages-installed-p ()
+  (loop for pkg in my/packages
+    when (not (package-installed-p pkg)) do (return nil)
+    finally (return t)))
+
+(unless (my/packages-installed-p)
+  (message "%s" "Refreshing package database...")
+  (package-refresh-contents)
+  (dolist (pkg my/packages)
+    (when (not (package-installed-p pkg))
+      (package-install pkg))))
+
+;; Find Executable Path on OS X
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+
+(add-hook 'prog-mode-hook 'company-mode)
+
+
 
 
 

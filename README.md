@@ -1,5 +1,5 @@
 # Configure .conf
-<img width="370" height="54" src="https://github.com/Comcx/.conf/blob/master/UI/Emacs.jpg"/>  
+<img width="360" height="54" src="https://github.com/Comcx/.conf/blob/master/UI/Emacs.jpg"/>  
 Configurations of my workspace  
 
 

@@ -25,7 +25,15 @@
 (global-set-key (kbd "C-^") 'resize-window-up)
 
 
+(defun resize-window-left ()
+  (interactive)
+  (shrink-window-horizontally 1))
 
+(defun resize-window-right ()
+  (interactive)
+  (enlarge-window-horizontally 1))
+(global-set-key (kbd "C-{") 'resize-window-left)
+(global-set-key (kbd "C-}") 'resize-window-right)
 
 (provide 'init-keybindings)
 

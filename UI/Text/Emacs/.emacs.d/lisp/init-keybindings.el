@@ -9,6 +9,7 @@
 ;; Bind to <F2>
 (global-set-key (kbd "<f2>") 'open-init-file)
 
+;; Shortcut for shell buffer
 (setq shell-num 0)
 (defun open-shell ()
   (interactive)
@@ -17,9 +18,11 @@
   (setq shell-num (+ shell-num 1)))
 (global-set-key (kbd "C-c s") 'open-shell)
 
-(defun resize-window ()
-  (message "underwork..."))
-;(global-set-key (kbd "C-c s") 'open-init-file)
+;; Shortcut for window-up resizing
+(defun resize-window-up ()
+  (interactive)
+  (enlarge-window 1))
+(global-set-key (kbd "C-^") 'resize-window-up)
 
 
 

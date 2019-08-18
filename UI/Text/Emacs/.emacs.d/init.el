@@ -9,6 +9,12 @@
 (package-initialize)
 (set-language-environment 'English)
 
+;; Encoding
+(prefer-coding-system 'utf-8)
+(setenv "LANG" "en_US.UTF-8")
+(setenv "LC_ALL" "en_US.UTF-8")
+(setenv "LC_CTYPE" "en_US.UTF-8")
+
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
@@ -44,7 +50,7 @@
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(custom-safe-themes
    (quote
-    ("b9a9204174c09936593d7c6e69ba300486b58999cae067d4af5d5cb180784b42" default)))
+    ("d75b09e9a0760034d871fde1ef96b55826d63dafef577d14a01b690764c851e9" "b9a9204174c09936593d7c6e69ba300486b58999cae067d4af5d5cb180784b42" default)))
  '(package-selected-packages (quote (haskell-mode company)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
@@ -54,6 +60,27 @@
 
 (setq ring-bell-function 'ignore)
 
+;; useful mode settings
+(display-time-mode 1)
+(column-number-mode 1)
+(global-hl-line-mode t)
+(show-paren-mode nil)
+(display-battery-mode 1)
+(tool-bar-mode -1)
+;(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(global-auto-revert-mode t)
+(global-hl-line-mode 1)
+
+;; file edit settings
+(setq tab-width                 2
+      inhibit-splash-screen     t
+      ;initial-scratch-message   nil
+      sentence-end-double-space nil
+      make-backup-files         nil
+      indent-tabs-mode          nil
+      make-backup-files         nil
+      auto-save-default         nil)
 
 
 
@@ -136,4 +163,19 @@
 
 
 
-
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro" :foundry "outline" :slant normal :weight normal :height 120 :width normal))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "gold"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "deep sky blue"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "orange"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "coral"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "green"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "purple"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "yellow"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "cyan"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "violet"))))
+ '(rainbow-delimiters-unmatched-face ((t (:background "red")))))

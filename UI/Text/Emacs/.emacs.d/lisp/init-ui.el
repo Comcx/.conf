@@ -5,8 +5,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/theme/")
-;(require 'jazz-theme)
-;(require 'infodoc-theme)
+
+;; setup titlebar appearance
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(add-to-list 'default-frame-alist '(ns-appearance . dark))
 
 
 (setq day-theme 'dichromacy)

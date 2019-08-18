@@ -35,6 +35,15 @@
 (global-set-key (kbd "C-{") 'resize-window-left)
 (global-set-key (kbd "C-}") 'resize-window-right)
 
+
+(global-set-key (kbd "C-\\") 'comment-line)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
+
+
+
+
 (provide 'init-keybindings)
 
 

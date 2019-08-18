@@ -6,15 +6,24 @@
 ;; |  | /~~\ | \| /~~\ \__> |___  |  | |___ | \|  |
 
 (when (>= emacs-major-version 24)
-    (require 'package)
-    (package-initialize)
-    (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-			     ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+  (require 'package)
+  (package-initialize)
+  (setq package-archives
+    '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+      ("melpa" . "http://elpa.emacs-china.org/melpa/")
+      ("org"   . "https://orgmode.org/elpa/"))))
 
 ;; cl - Common Lisp Extension
 (require 'cl)
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
+(eval-when-compile
+  (require 'use-package))
+(setq use-package-verbose t)
+(setq use-package-always-ensure t)
 
 ;; Add Packages
 (defvar my/packages
@@ -32,7 +41,7 @@
      haskell-mode
      web-mode
      js2-mode
-     ;org-mode
+     ;org-mode ;self contain
      markdown-mode
      ;; --- Themes ---
      ;monokai-theme
@@ -78,6 +87,6 @@
 
 
 
-;; end of file
+
 (provide 'init-packages)
 			   

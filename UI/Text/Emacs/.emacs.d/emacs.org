@@ -29,7 +29,6 @@
 (package-initialize)
 
 (require 'init-packages)	; Package management
-; (require 'index)
 (require 'init-ui)		; UI management
 (require 'init-keybindings)	; Key bindings
 (require 'init-org)		; Org mode settings

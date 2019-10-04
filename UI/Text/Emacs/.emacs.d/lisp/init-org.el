@@ -63,7 +63,7 @@
 (setq org-src-preserve-indentation t)
 
 (setq org-hide-emphasis-markers t)
-
+(setq org-pretty-entitles t)
 
 ;; use org-bullets-mode for utf8 symbols as org bullets
 (require 'org-bullets)
@@ -72,7 +72,17 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 (setq org-bullets-bullet-list
   ;'("✙" "♱" "♰" "☥" "✞" "✟" "✝" "†" "✠" "✚" "✜" "✛" "✢" "✣" "✤" "✥")
-  '("○" "☉" "◎" "◉" "○" "◌" "◎" "●" "◦" "◯" "⚪" "⚫" "⚬" "❍" "￮" "⊙" "⊚" "⊛" "∙" "∘"))
+  ;'("○" "☉" "◎" "◉" "○" "◌" "◎" "●" "◦" "◯" "⚪" "⚫" "⚬" "❍" "￮" "⊙" "⊚" "⊛" "∙" "∘"))
+  '("☯" "☉" "◎" "◉" "○" "◌" "◎" "●" "◦" "◯" "⚪" "⚫" "⚬" "❍" "￮" "⊙" "⊚" "⊛" "∙" "∘")) 
+
+
+
+
+;(require 'LaTeX-math-mode)
+
+
+
+
 
 
 (provide 'init-org)

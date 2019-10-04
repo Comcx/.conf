@@ -18,7 +18,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
-(setq default-directory "~/Workspace/") ; Change if you need
+(setq default-directory "~/") ; Change if you need
 
 #+END_SRC
 

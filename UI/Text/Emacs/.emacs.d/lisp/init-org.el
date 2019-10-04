@@ -6,8 +6,6 @@
 (require 'org)
 
 
-
-
 ;; Org Setting
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
@@ -16,7 +14,7 @@
 (global-set-key "\C-cb" 'org-switchb)
 
 (setq org-agenda-files
-      '("c:/Users/HP/Desktop/workspace/orghub/Final-test/"))
+      '("~/Workspace/Note/Day.org"))
 
 ;;(custom-set-variables
 ;;'(org-directory "c:/Users/HP/Desktop/workspace/orghub/Final-test/")
@@ -32,14 +30,14 @@
               (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "PHONE" "MEETING"))))
 
 (setq org-todo-keyword-faces
-      (quote (("TODO" :foreground "red" :weight bold)
-              ("NEXT" :foreground "blue" :weight bold)
-              ("DONE" :foreground "forest green" :weight bold)
-              ("WAITING" :foreground "orange" :weight bold)
-              ("HOLD" :foreground "magenta" :weight bold)
+      (quote (("TODO"      :foreground "red"          :weight bold)
+              ("NEXT"      :foreground "blue"         :weight bold)
+              ("DONE"      :foreground "forest green" :weight bold)
+              ("WAITING"   :foreground "orange"       :weight bold)
+              ("HOLD"      :foreground "magenta"      :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold)
-              ("MEETING" :foreground "forest green" :weight bold)
-              ("PHONE" :foreground "forest green" :weight bold))))
+              ("MEETING"   :foreground "forest green" :weight bold)
+              ("PHONE"     :foreground "forest green" :weight bold))))
 
 
 
@@ -69,16 +67,5 @@
 
 
 (provide 'init-org)
-
-
-
-
-
-
-
-
-
-
-
 
 

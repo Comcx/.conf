@@ -13,6 +13,8 @@
       ("melpa" . "http://elpa.emacs-china.org/melpa/")
       ("org"   . "https://orgmode.org/elpa/"))))
 
+(setq package-check-signature nil)
+
 ;; cl - Common Lisp Extension
 (require 'cl)
 

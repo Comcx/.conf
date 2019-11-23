@@ -132,6 +132,24 @@
 ;; Math Symbols
 (require 'pretty-mode)
 
+(defun my/add-visual-replacement (from to)
+  "Make `prettify-symbols-mode' replace string FROM with string TO.
+
+Updates `prettify-symbols-alist'.  You may need to toggle
+`prettify-symbols-mode' to make the changes take effect.
+
+Each character of TO is vertically aligned using the baseline,
+such that base-left of the character is aligned with base-right
+of the preceding character.  Refer to `reference-point-alist'
+for more information."
+  (push (cons from (let ((composition nil))
+                     (dolist (char (string-to-list to)
+                                   (nreverse (cdr composition)))
+                       (push char composition)
+                       (push '(Br . Bl) composition))))
+        prettify-symbols-alist))
+
+
 (defun prettify-python()
   (add-hook 'python-mode-hook
    (lambda ()
@@ -162,10 +180,45 @@
 (defun prettify-haskell ()
   (add-hook 'haskell-mode-hook 'pretty-mode))
 
+(defun prettify-scala ()
+  (add-hook 'scala-mode-hook
+   (lambda ()
+     (my/add-visual-replacement "import" ">>>")
+     (my/add-visual-replacement "{" "$")
+     (my/add-visual-replacement "}" ".")
+     (mapc (lambda (pair) (push pair prettify-symbols-alist))
+       '(;; Syntax
+         ("def" .      #x2131)
+	 ;("not" .      #x2757)
+	 ;("=>".        ?⇒)
+         ("in" .       #x2208)
+         ("not in" .   #x2209)
+         ("return" .   #x27fc)
+         ("yield" .    #x27fb)
+         ("for" .      #x2200)
+         ;; Base Types
+         ("Int" .      #x2124)
+         ("Float" .    #x211d)
+         ("String" .      #x1d54a)
+         ("true" .     #x1d54b)
+         ("false" .    #x1d53d)
+         ;; Mypy
+         ("Dict" .     #x1d507)
+         ("List" .     #x2112)
+         ("Tuple" .    #x2a02)
+         ("Set" .      #x2126)
+         ("Iterable" . #x1d50a)
+         ("Any" .      #x2754)
+         ("Union" .    #x22c3))))))
+
+
+
+
 (defun prettify-pl (pl)
   (pcase pl
     ('Python  (prettify-python))
     ('Haskell (prettify-haskell))
+    ('Scala   (prettify-scala))
     (others  nil)))
 
 (defun prettify-me(b)
@@ -190,7 +243,7 @@
 (prettify-me nil)
 ;(prettify-pl 'Python)
 ;(prettify-pl 'Haskell)
-
+;(prettify-pl 'Scala)
 
 
 

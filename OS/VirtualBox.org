@@ -1,0 +1,24 @@
+
+
+** Virtual Box shared files service tips
+- Firstly, one have to check whether you have installed _virtualbox-guest-utils_ 
+  #+BEGIN_SRC 
+  sudo pacman -Q virtualbox-guest-utils
+  #+END_SRC
+
+- Make sure u have the file folder _'media'_ 
+
+- Then, enable this service:
+  #+BEGIN_SRC 
+  sudo systemctl enable vboxservice.service
+  #+END_SRC
+  Also, start the service:
+  #+BEGIN_SRC 
+  sudo systemctl start vboxservice.service
+  #+END_SRC
+
+p.s. If still not work, try to restart your virtual computer:)
+
+
+
+

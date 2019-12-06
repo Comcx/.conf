@@ -45,6 +45,8 @@
      js2-mode
      ;org-mode ;self contain
      markdown-mode
+     htmlize
+     ox-reveal
      ;; --- Themes ---
      ;monokai-theme
 
@@ -62,6 +64,11 @@
 (setq neo-theme 'ascii)
 
 
+
+;; org-mode export to ppt
+(require 'ox-reveal)
+; set the reveal.js path
+;(setq org-reveal-root "file:////home/comcx/Installs/reveal.js/")
 
 
 

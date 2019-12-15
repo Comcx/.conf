@@ -66,7 +66,7 @@
 
 
 ;; org-mode export to ppt
-(require 'ox-reveal)
+;(require 'ox-reveal)
 ; set the reveal.js path
 ;(setq org-reveal-root "file:////home/comcx/Installs/reveal.js/")
 

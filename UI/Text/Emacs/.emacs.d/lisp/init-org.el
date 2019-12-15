@@ -31,7 +31,7 @@
 
 (setq org-todo-keyword-faces
       (quote (("TODO"      :foreground "red"          :weight bold)
-              ("NEXT"      :foreground "blue"         :weight bold)
+              ("NEXT"      :foreground "cyan"         :weight bold)
               ("DONE"      :foreground "forest green" :weight bold)
               ("WAITING"   :foreground "orange"       :weight bold)
               ("HOLD"      :foreground "magenta"      :weight bold)

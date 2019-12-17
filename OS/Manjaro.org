@@ -1,0 +1,40 @@
+
+
+
+** ERROR: One or more PGP signatures could not be verified!
+Once you have local gpg key pair, you can import the unknown key to your local users set of keys. 
+In my case, the key 5CC908FDB71E12C2 needs to be imported as follows.
+
+#+BEGIN_SRC 
+$ gpg --recv-keys 5CC908FDB71E12C2
+gpg: keybox '/home/user/.gnupg/pubring.kbx' created
+gpg: key 5CC908FDB71E12C2: 8 signatures not checked due to missing keys
+gpg: /home/aaron/.gnupg/trustdb.gpg: trustdb created
+gpg: key 5CC908FDB71E12C2: public key "Daniel Stenberg <daniel@haxx.se>" imported
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:               imported: 1
+#+END_SRC
+
+
+** Fixing “Target not found” in pacman
+pacman cannot find the target because it only searches the official repositories. And pacaur, actually lives in the AUR.
+
+AUR helpers, like yaourt or packer, make searching for, and installing, AUR packages really simply. 
+If you don't have one of these, you can always do things manually using the desired PKGBUILD. 
+All you need to do is compile it from source using makepkg and then install it via pacman.
+
+For example:
+#+BEGIN_SRC 
+mkdir ~/pkgs && cd ~/pkgs
+
+wget https://aur.archlinux.org/packages/pa/pacaur/PKGBUILD
+
+makepkg -s
+
+sudo pacman -U pacaur-4.2.14-1-any.pkg.tar.xz
+#+END_SRC
+
+
+
+

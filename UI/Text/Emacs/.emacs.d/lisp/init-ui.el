@@ -211,7 +211,42 @@ for more information."
          ("Any" .      #x2754)
          ("Union" .    #x22c3))))))
 
-
+(defun prettify-cxx ()
+  (add-hook 'c++-mode-hook
+   (lambda ()
+     (my/add-visual-replacement "#include" ">>=")
+     (my/add-visual-replacement "bool" "Bool")
+     (my/add-visual-replacement "void" "Void")
+     (my/add-visual-replacement "vector" "Vector")
+     (my/add-visual-replacement "double" "Double")
+     (my/add-visual-replacement "char" "Char")
+     ;(my/add-visual-replacement "{" "$")
+     ;(my/add-visual-replacement "}" ".")
+     (mapc (lambda (pair) (push pair prettify-symbols-alist))
+       '(;; Syntax
+         ("function" .      #x2131)
+	 ("template" .      ?λ)
+	 ;("not" .      #x2757)
+	 ;("=>".        ?⇒)
+         (":" .       #x2208)
+         ("not in" .   #x2209)
+         ("return" .   #x27fc)
+         ("yield" .    #x27fb)
+         ;("for" .      #x2200)
+         ;; Base Types
+         ("int" .      #x2124)
+         ("float" .    #x211d)
+         ("string" .      #x1d54a)
+         ("true" .     #x1d54b)
+         ("false" .    #x1d53d)
+         ;; Mypy
+         ;("Dict" .     #x1d507)
+         ;("List" .     #x2112)
+         ("pair" .    #x2a02)
+         ;("Set" .      #x2126)
+         ;("Iterable" . #x1d50a)
+         ;("Any" .      #x2754)
+         ("union" .    #x22c3))))))
 
 
 (defun prettify-pl (pl)
@@ -219,6 +254,7 @@ for more information."
     ('Python  (prettify-python))
     ('Haskell (prettify-haskell))
     ('Scala   (prettify-scala))
+    ('C++     (prettify-cxx))
     (others  nil)))
 
 (defun prettify-me(b)
@@ -244,7 +280,7 @@ for more information."
 ;(prettify-pl 'Python)
 ;(prettify-pl 'Haskell)
 ;(prettify-pl 'Scala)
-
+;(prettify-pl 'C++)
 
 
 

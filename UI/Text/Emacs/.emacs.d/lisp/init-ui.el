@@ -215,8 +215,11 @@ for more information."
   (add-hook 'c++-mode-hook
    (lambda ()
      (my/add-visual-replacement "#include" ">>=")
+     (my/add-visual-replacement "auto" "var")
+     (my/add-visual-replacement "int" "Int")
      (my/add-visual-replacement "bool" "Bool")
      (my/add-visual-replacement "void" "Void")
+     (my/add-visual-replacement "string" "String")
      (my/add-visual-replacement "vector" "Vector")
      (my/add-visual-replacement "double" "Double")
      (my/add-visual-replacement "char" "Char")
@@ -234,9 +237,9 @@ for more information."
          ("yield" .    #x27fb)
          ;("for" .      #x2200)
          ;; Base Types
-         ("int" .      #x2124)
+         ;("int" .      #x2124)
          ("float" .    #x211d)
-         ("string" .      #x1d54a)
+         ;("string" .      #x1d54a)
          ("true" .     #x1d54b)
          ("false" .    #x1d53d)
          ;; Mypy

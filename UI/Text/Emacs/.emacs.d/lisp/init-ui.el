@@ -221,6 +221,8 @@ for more information."
      (my/add-visual-replacement "void" "Void")
      (my/add-visual-replacement "string" "String")
      (my/add-visual-replacement "vector" "Vector")
+     (my/add-visual-replacement "map" "Map")
+     (my/add-visual-replacement "list" "List")
      (my/add-visual-replacement "double" "Double")
      (my/add-visual-replacement "char" "Char")
      ;(my/add-visual-replacement "{" "$")

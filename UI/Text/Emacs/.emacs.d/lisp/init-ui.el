@@ -22,7 +22,7 @@
         (setq now day-theme)
         (setq now nox-theme))
 
-    (load-theme now))
+    (load-theme now t))
 
 
 ;(synchronize-theme)

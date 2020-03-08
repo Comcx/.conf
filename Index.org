@@ -2,7 +2,24 @@
 #+AUTHOR: Comcx
 
 
-* OS
+* Hierarchy 
+** Workspace
+*** Lang
+**** C
+**** C++
+***** Mix.lib
+**** Haskell
+**** Julia
+**** Lua
+**** Python
+**** Racket
+**** Scala
+**** Scheme
+**** JavaScript
+*** Repo
+*** Note
+*** Game
+** OS
 ** Hierarchy
 *** /home/comcx
 **** .bashrc
@@ -16,7 +33,7 @@
 ***** Note
 ***** .conf
 
-* UI
+** UI
 
 ** Text
 *** Font
@@ -38,27 +55,23 @@
 *** Wallpaper
 *** Xfce4
 
-* Net
+** Net
 ** Web
+** Conf
+*** FFS
+
+* Software
 ** Git
-
-* Lang
-** C
-** C++
-*** Mix.lib
-** Haskell
-** Julia
-** Lua
+** Zsh oh-my-zsh
+** Firefox
+** Emacs
+** GCC/G++
+** Clang
+** Haskell GHC
+** Agda
+** Rustup
 ** Python
-** Racket
-** Scala
-** Scheme
-** JavaScript
-
-* Etc
-** FFS
-
-
-
+** openjdk
+** SBT
 
 

@@ -23,12 +23,15 @@ fi
 
 cd ~
 comcx-install git
+git config --global user.email "comcx@outlook.com"
+git config --global user.name "comcx"
+
 comcx-install emacs
 
 git clone https://github.com/Comcx/.conf
 cp -r .conf/Workspace .
 cp .conf/UI/Text/Shell/Bash/.bashrc .
-cp -r .conf/UI/Text/Emacs/.emacs.d
+cp -r .conf/UI/Text/Emacs/.emacs.d .
 
 emacs
 
